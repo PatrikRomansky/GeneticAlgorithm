@@ -30,8 +30,9 @@ namespace test
 
 
             var sampleController = new ControllerBitmap();
-
-            var input = "C:/Users/Tigi/Desktop/Source/kika2.jpg";
+            
+            // TODO: FILENAME
+            var input = "";
 
             sampleController.Initialize(input);
 
