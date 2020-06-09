@@ -6,7 +6,7 @@ namespace GeneticAlgorithm.Operators.Mutations
     public class MutationTwors : MutationSwap
     {
         /// <summary>
-        /// Initializes a new instance.
+        /// Initializes a new instance of Twors mutation.
         /// </summary>
         public MutationTwors()
         {

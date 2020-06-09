@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using System.Drawing;
 using System.Drawing.Drawing2D;
@@ -21,8 +17,6 @@ namespace GeneticAlgorithm.Controllers.ImageApproximation
 {
     class ControllerBitmapScale : ControllerImage
     {
-        private Bitmap targetBitmap;
-
 
         public override IIndividual CreateIndividual()
         {
@@ -38,7 +32,7 @@ namespace GeneticAlgorithm.Controllers.ImageApproximation
             xover = new XoverUniform();
             selection = new SelectionTournament();
             elitizmus = new ElitizmusFitness();
-            termination = new TerminationMaxGenerationNumber(30_000);
+            termination = new TerminationMaxGenerationNumber(100_000);
 
             executor = new ExecutorParallel();
 

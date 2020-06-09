@@ -19,18 +19,16 @@ namespace GeneticAlgorithm.Terminations
         /// <summary>
         /// Determines whether the specified geneticAlgorithm reached the termination condition.
         /// </summary>
-        /// <returns>True if termination has been reached, otherwise false.</returns>
+        /// <returns>True if termination has been fulfilled, otherwise false.</returns>
         /// <param name="geneticAlgorithm">The genetic algorithm.</param>
         public bool IsFulfilled(IGeneticlgorithm geneticAlgorithm)
         {
-            if (geneticAlgorithm.GenerationsNumber >= ExpectedGenerationsNumber)
-            {
-                return true;
-            }
-            else
+            if (geneticAlgorithm.GenerationsNumber < ExpectedGenerationsNumber)
             {
                 return false;
             }
+
+            return true;
         }
     }
 }

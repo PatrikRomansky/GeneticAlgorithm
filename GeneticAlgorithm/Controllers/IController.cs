@@ -27,9 +27,9 @@ namespace GeneticAlgorithm.Controllers
         void ConfigGA(GA ga);
 
         /// <summary>
-        /// Creates the chromosome.
+        /// Creates the individual.
         /// </summary>
-        /// <returns>The chromosome.</returns>
+        /// <returns>The individual.</returns>
         IIndividual CreateIndividual();
 
         /// <summary>
